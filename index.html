@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h2>AgroForte</h2>
+                <span class="tag-agrinho">Projeto Agrinho</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#equilibrio">O Equilíbrio</a></li>
+                    <li><a href="#ibge">Dados IBGE</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro forte, futuro sustentável: <br><span>equilíbrio entre produção e meio ambiente</span></h1>
+            <p>Descubra como a agricultura familiar alimenta o país enquanto protege a nossa biodiversidade.</p>
+            <a href="#equilibrio" class="btn-main">Explorar Projeto</a>
+        </div>
+    </section>
+
+    <section id="equilibrio" class="section-container">
+        <h2 class="section-title">Produzir e Preservar: O Grande Desafio</h2>
+        <div class="grid-2-col">
+            <div class="texto-ludico">
+                <p>Você sabia que é possível aumentar a produção de alimentos sem derrubar nenhuma árvore? Através de técnicas inteligentes como a <strong>rotação de culturas</strong> e a <strong>integração lavoura-pecuária-floresta</strong>, o campo se transforma em um aliado da natureza.</p>
+                <p>Cuidar do solo, proteger as nascentes de água e usar adubos orgânicos garantem que a terra continue fértil para as próximas gerações.</p>
+            </div>
+            <div class="imagem-ludica">
+                <div class="ilustracao-campo">
+                    <div class="sol"></div>
+                    <div class="arvore"></div>
+                    <div class="plantacao"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ibge" class="section-container bg-light">
+        <h2 class="section-title">A Força da Agricultura Familiar (Dados do IBGE)</h2>
+        <p class="subtitle">Segundo o Censo Agropecuário do IBGE, a pequena produção faz uma enorme diferença.</p>
+        
+        <div class="grid-3-col">
+            <div class="card-dado">
+                <div class="numero-animado" data-alvo="70">0</div>
+                <p><strong>70% dos alimentos</strong> que chegam à mesa dos brasileiros vêm da agricultura familiar.</p>
+            </div>
+            <div class="card-dado">
+                <div class="numero-animado" data-alvo="80">0</div>
+                <p>Cerca de <strong>80% das ocupações</strong> no setor agrícola do país são geradas por pequenas propriedades.</p>
+            </div>
+            <div class="card-dado">
+                <div class="numero-animado" data-alvo="23">0</div>
+                <p>Mesmo ocupando apenas cerca de <strong>23% das terras</strong>, o setor é o que mais protege matas nativas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="section-container">
+        <h2 class="section-title">Simulador da Fazenda Sustentável</h2>
+        <p class="subtitle">Faça escolhas conscientes e veja a nota de sustentabilidade da sua propriedade!</p>
+        
+        <div class="simulador-box">
+            <form id="form-sustentavel">
+                <div class="pergunta">
+                    <label>1. Qual tipo de adubo você prefere usar?</label>
+                    <select id="p1">
+                        <option value="5">Apenas fertilizantes químicos industriais</option>
+                        <option value="10">Uso misto com foco em adubação orgânica</option>
+                    </select>
+                </div>
+
+                <div class="pergunta">
+                    <label>2. Como você cuida das margens dos rios e nascentes?</label>
+                    <select id="p2">
+                        <option value="0">Planto até a beira da água para render mais</option>
+                        <option value="10">Mantenho a mata ciliar intacta e protegida</option>
+                    </select>
+                </div>
+
+                <div class="pergunta">
+                    <label>3. Qual a sua estratégia para combater pragas?</label>
+                    <select id="p3">
+                        <option value="5">Uso intensivo de defensivos químicos</option>
+                        <option value="10">Controle biológico e rotação de culturas</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="calcularSustentabilidade()">Calcular Pontuação</button>
+            </form>
+
+            <div id="resultado" class="resultado-escondido">
+                <h3>Sua Nota: <span id="nota-valor">0</span>/30</h3>
+                <p id="nota-mensagem"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Desenvolvido para o Concurso Agrinho.</p>
+        <p>Fontes de Dados: Censo Agropecuário - IBGE | Imagens e Elementos Lúdicos autorais.</p>
+        <small class="tag-agrinho">Parceria: Agrinho</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
